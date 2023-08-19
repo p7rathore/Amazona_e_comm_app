@@ -1,0 +1,19 @@
+// export default {
+//   MONGODB_URL: process.env.MONGODB_URL || "mongodb://0.0.0.0:27017/amazona",
+//   JWT_SECRET: process.env.JWT_SECRET || "somethingsecret",
+// };
+
+// --------------
+
+import dotenv from "dotenv";
+
+dotenv.config();
+
+export default {
+  PORT: process.env.PORT || 5000,
+  MONGODB_URL: process.env.MONGODB_URL || "mongodb://0.0.0.0:27017/amazona",
+  JWT_SECRET: process.env.JWT_SECRET || "somethingsecret",
+  PAYPAL_CLIENT_ID: process.env.PAYPAL_CLIENT_ID || "sb",
+  accessKeyId: process.env.accessKeyId || "accessKeyId",
+  secretAccessKey: process.env.secretAccessKey || "secretAccessKey",
+};
